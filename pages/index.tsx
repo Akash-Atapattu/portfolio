@@ -14,8 +14,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <div className={styles.background}>
-          <div className={styles.title}>
-            Welcome!
+          <div className="blob">
+            <h1>Welcome</h1>
           </div>
         </div>
       </main>
