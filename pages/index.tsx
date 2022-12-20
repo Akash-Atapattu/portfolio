@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link';
+// import NavBar from '..components/NavBar';
 
 const Home: NextPage = () => {
   return (
@@ -13,11 +15,34 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.background}>
-          <div className="blob">
-            <h1 className="div">Welcome</h1>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <Link href="/">
+            <a className="navbar-brand">My Site</a>
+          </Link>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link href="/about">
+                  <a className="nav-link">About</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/projects">
+                  <a className="nav-link">Projects</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/links">
+                  <a className="nav-link">Links</a>
+                </Link>
+              </li>
+            </ul>
           </div>
-        </div>
+      </nav>
+      <h1 className={styles.title}>Welcome</h1>
       </main>
 
     </div>
