@@ -1,6 +1,4 @@
-.background{
-  /* background-color: bisque; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 .homepage{
   width: 100%;
@@ -10,8 +8,14 @@
 
 .title{
   font-family: 'Raleway', sans-serif;
-  text-align: center;
-  font-size: 5em;
+  font-size: 3em;
   color: black;
   padding-top: 10px;
+  display: inline-block;
+}
+
+.title_container{
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
 }
