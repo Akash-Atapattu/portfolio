@@ -22,21 +22,35 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Home</title>
+        <title>Akash Atapattu</title>
         <meta name="description" content="Akash Atapattu Professional Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <div className={styles.background}>
-          <div className={styles.homepage}>
-            <div className={styles.title_container}>
-              <Welcomes />
-              <p className={styles.title}>&nbsp;to Akash Atapattu's Portfolio</p>
+        <div className={styles.background} />
+          <div className={styles.foreground}>
+            <div style={{border: "2px solid black", width: "90vw", height: "90vh", position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
+              <div style={{padding: "30px"}}>
+                <Welcomes />
+              </div>
             </div>
-            
+            {/* top portion of frame */}
+            {/* <div style={{height: "5vh", width: "100vw", position: "fixed"}}>
+              <div style={{backgroundColor: "black", position: "absolute", height: "2px", width: "90vw", bottom: 0, left: "5%", right: "5%"}}></div>
+            </div>
+            <div>
+              <div style={{ float: "left", height: "90vh", width: "5vw", display: "inline-block"}}>
+                <div style={{ position: "absolute", backgroundColor: "black", right: 0, height: "90vh", width: "2px", top: "5%"}} />
+              </div>
+            <div style={{height: "90vh", width: "90vw", position: "fixed", display: "inline-block"}}>
+
+            </div>
+              <div style={{ float: "right", height: "90vh", width: "5vw", display: "inline-block"}}>
+                <div style={{ position: "absolute", backgroundColor: "black", left: 0, height: "90vh", width: "2px", top: "5%"}} />
+              </div>
+            </div> */}
           </div>
-        </div>
       </main>
 
     </div>
