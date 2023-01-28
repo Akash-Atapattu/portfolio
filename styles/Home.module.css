@@ -30,7 +30,7 @@
 
 .sidenav_buttons:hover{
   animation: sidenav_button_hover 0.25s ease-in;
-  /* background-color: black; */
+  animation-fill-mode: forwards;
 }
 
 .sidenav_buttons:active{

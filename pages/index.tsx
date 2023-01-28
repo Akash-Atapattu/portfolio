@@ -20,6 +20,13 @@ const Home: NextPage = () => {
   ]
   const [welcomeMessage, setWelcomeMessage] = useState("Welcome");
 
+  const handle_sidenav_click = (event: string) => {
+    switch(event){
+      case "About":
+        console.log("detected");
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -35,18 +42,18 @@ const Home: NextPage = () => {
               <div className="w-100 h-25 p-3">
                 <Welcomes />
               </div>
-              <div className="w-25 h-75 d-inline-block">
-                <div className={styles.sidenav_buttons}>
-                  
+              <div className="h-75 d-flex flex-column">
+                <div className={styles.sidenav_buttons} onClick={() => handle_sidenav_click("About")}>
+                  <h2>About Akash</h2>
                 </div>
                 <div className={styles.sidenav_buttons}>
-                  
+                  <h2>Contact</h2>
                 </div>
                 <div className={styles.sidenav_buttons}>
-                  
+                  <h2>Projects</h2>
                 </div>
                 <div className={styles.sidenav_buttons}>
-                  
+                  <h2>Resume</h2>
                 </div>
               </div>
               <div className="w-75 h-75 d-inline-block">
