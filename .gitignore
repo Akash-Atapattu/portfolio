@@ -1,2 +1,7 @@
-node_modules/
-.next/
+# .gitignore
+
+# Next.js build files
+/.next
+
+# Node modules
+/node_modules
