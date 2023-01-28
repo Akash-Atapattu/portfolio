@@ -21,6 +21,28 @@
   position: relative;
 }
 
+.sidenav_buttons{
+  width: 75%;
+  height: 50px;
+  border: black 1px solid;
+  margin: 10px;
+}
+
+.sidenav_buttons:hover{
+  animation: sidenav_button_hover 0.25s ease-in;
+  /* background-color: black; */
+}
+
+.sidenav_buttons:active{
+  background-color: black;
+}
+
+@keyframes sidenav_button_hover{
+  to {
+    background-color: black;
+  }
+}
+
 /* ##############  Welcome Message Styles ################*/
 
 @keyframes flashing_typewriter {
