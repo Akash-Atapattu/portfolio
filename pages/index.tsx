@@ -36,31 +36,34 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className={styles.background} />
-          <div className={styles.foreground}>
-            <div style={{border: "2px solid black", width: "90vw", height: "90vh", position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
-              <div className="w-100 h-25 p-3">
-                <Welcomes />
-              </div>
-              <div className="h-75 d-flex flex-column">
-                <div className={styles.sidenav_buttons} onClick={() => handle_sidenav_click("About")}>
-                  <h2>About Akash</h2>
-                </div>
-                <div className={styles.sidenav_buttons}>
-                  <h2>Contact</h2>
-                </div>
-                <div className={styles.sidenav_buttons}>
-                  <h2>Projects</h2>
-                </div>
-                <div className={styles.sidenav_buttons}>
-                  <h2>Resume</h2>
-                </div>
-              </div>
-              <div className="w-75 h-75 d-inline-block">
+        <div className={styles.background}>
+          <img src="the_school_of_athens.jpg"/>
+        </div>
 
+        <div className={styles.foreground}>
+          <div style={{border: "2px solid white", width: "90vw", height: "90vh", position: "fixed", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
+            <div className="w-100 h-25 p-3">
+              <Welcomes />
+            </div>
+            <div className="h-75 d-flex flex-column">
+              <div className={styles.sidenav_buttons} onClick={() => handle_sidenav_click("About")}>
+                <h2>About Akash</h2>
+              </div>
+              <div className={styles.sidenav_buttons}>
+                <h2>Contact</h2>
+              </div>
+              <div className={styles.sidenav_buttons}>
+                <h2>Projects</h2>
+              </div>
+              <div className={styles.sidenav_buttons}>
+                <h2>Resume</h2>
               </div>
             </div>
+            <div className="w-75 h-75 d-inline-block">
+
+            </div>
           </div>
+        </div>
       </main>
 
     </div>
